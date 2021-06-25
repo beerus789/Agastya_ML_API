@@ -1,7 +1,7 @@
 from flask import Flask, json, jsonify, request
 from model_files.model import predict_covid
 
-app = Flask("covid_prediction")
+app = Flask(__name__)
 
 @app.route('/')
 def index():
