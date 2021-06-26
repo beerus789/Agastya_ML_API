@@ -14,8 +14,8 @@ from skimage import io
 #Main function to predict COVID
 def predict_covid(img_loc):
 
-    model = load_model('trained_Model.hdf5')
-    model.load_weights('trained_Model.hdf5')
+    model = load_model('model_files/trained_Model.hdf5')
+    model.load_weights('model_files/trained_Model.hdf5')
 
     label_dic = {0:'Covid19 Positive',
             1: 'Covid19 Negative',
