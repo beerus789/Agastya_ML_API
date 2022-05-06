@@ -27,7 +27,7 @@ def predict_covid(img_loc):
     # img_temp = url_to_image(img_loc)
 
     # img_loc.encode()
-    img_loc = img_loc.decode('utf-8')
+    # img_loc = img_loc.decode('utf-8')
     # print(type(img_loc))
     img_temp = io.imread(img_loc)
 
