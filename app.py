@@ -9,7 +9,7 @@ def index():
 
 @app.route('/predict', methods = ['POST'])
 def predict():
-    image_loc = request.data
+    image_loc = request.form.get('image_url')
     # print(image_loc)
 
     # return req
